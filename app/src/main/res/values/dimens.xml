@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <dimen name="lbl_txt_margin_padding">6dp</dimen>
+    <dimen name="lbl_textSize">14sp</dimen>
+    <dimen name="txtPhone_width">100dp</dimen>
+    <dimen name="lblAvatar_textSize">20sp</dimen>
+    <dimen name="lblAvatar_margin">15dp</dimen>
 </resources>

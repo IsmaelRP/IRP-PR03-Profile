@@ -1,4 +1,4 @@
-package es.iessaladillo.pedrojoya.pr03.data.local.model;
+package es.iessaladillo.ismaelraqi.pr03.data.local.model;
 
 import androidx.annotation.DrawableRes;
 

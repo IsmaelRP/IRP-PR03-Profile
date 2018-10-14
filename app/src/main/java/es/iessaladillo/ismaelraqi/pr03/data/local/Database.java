@@ -1,10 +1,10 @@
-package es.iessaladillo.pedrojoya.pr03.data.local;
+package es.iessaladillo.ismaelraqi.pr03.data.local;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-import es.iessaladillo.pedrojoya.pr03.R;
-import es.iessaladillo.pedrojoya.pr03.data.local.model.Avatar;
+import es.iessaladillo.ismaelraqi.irp_pr03_profile.R;
+import es.iessaladillo.ismaelraqi.pr03.data.local.model.Avatar;
 
 /**
  * Database to retrieve avatars from. It uses singleton design pattern.

@@ -8,4 +8,6 @@
     <color name="colorError">#FF0000</color>
     <color name="white">#FFFFFF</color>
     <!-- END DO NOT TOUCH -->
+    <color name="grey">	#A9A9A9</color>      <!-- He añadido este color para el fondo del TextView del nombre
+                                                    de los gatos -->
 </resources>

@@ -1,4 +1,4 @@
-package es.iessaladillo.pedrojoya.pr03.ui.main;
+package es.iessaladillo.ismaelraqi.pr03.ui.main;
 
 
 import android.graphics.Typeface;
@@ -10,9 +10,9 @@ import org.junit.runner.RunWith;
 import androidx.test.filters.LargeTest;
 import androidx.test.rule.ActivityTestRule;
 import androidx.test.runner.AndroidJUnit4;
-import es.iessaladillo.pedrojoya.pr03.R;
-import es.iessaladillo.pedrojoya.pr03.data.local.Database;
-import es.iessaladillo.pedrojoya.pr03.data.local.model.Avatar;
+import es.iessaladillo.ismaelraqi.irp_pr03_profile.R;
+import es.iessaladillo.ismaelraqi.pr03.data.local.Database;
+import es.iessaladillo.ismaelraqi.pr03.data.local.model.Avatar;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -27,7 +27,7 @@ import static androidx.test.espresso.matcher.ViewMatchers.isEnabled;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withTagValue;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
-import static es.iessaladillo.pedrojoya.pr03.utils.Matchers.withBoldTypeface;
+import static es.iessaladillo.ismaelraqi.pr03.utils.Matchers.withBoldTypeface;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.isEmptyOrNullString;
 import static org.hamcrest.Matchers.not;
