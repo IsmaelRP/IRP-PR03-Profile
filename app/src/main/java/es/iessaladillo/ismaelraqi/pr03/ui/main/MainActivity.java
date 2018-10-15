@@ -176,10 +176,12 @@ public class MainActivity extends AppCompatActivity {
         if (txtName.getText().toString().length() <= 0) {
             txtName.setError((getString(R.string.main_invalid_data)));
             lblName.setTextColor(getResources().getColor(R.color.colorError));
+            lblName.setEnabled(false);
             isWrong = true;
         } else {
             txtName.setError(null);
             lblName.setTextColor(getResources().getColor(R.color.colorBlack));
+            lblName.setEnabled(true);
             isWrong = false;
         }
         return isWrong;
@@ -191,11 +193,13 @@ public class MainActivity extends AppCompatActivity {
             txtEmail.setError((getString(R.string.main_invalid_data)));
             imgEmail.setEnabled(false);
             lblEmail.setTextColor(getResources().getColor(R.color.colorError));
+            lblEmail.setEnabled(false);
             isWrong = true;
         } else {
             txtAddress.setError(null);
             imgEmail.setEnabled(true);
             lblEmail.setTextColor(getResources().getColor(R.color.colorBlack));
+            lblEmail.setEnabled(true);
             isWrong = false;
         }
         return isWrong;
@@ -207,11 +211,13 @@ public class MainActivity extends AppCompatActivity {
             txtPhoneNumber.setError((getString(R.string.main_invalid_data)));
             imgPhonenumber.setEnabled(false);
             lblPhoneNumber.setTextColor(getResources().getColor(R.color.colorError));
+            lblPhoneNumber.setEnabled(false);
             isWrong = true;
         } else {
             txtPhoneNumber.setError(null);
             imgPhonenumber.setEnabled(true);
             lblPhoneNumber.setTextColor(getResources().getColor(R.color.colorBlack));
+            lblPhoneNumber.setEnabled(true);
             isWrong = false;
         }
         return isWrong;
@@ -223,11 +229,13 @@ public class MainActivity extends AppCompatActivity {
             txtAddress.setError((getString(R.string.main_invalid_data)));
             imgAddress.setEnabled(false);
             lblAddress.setTextColor(getResources().getColor(R.color.colorError));
+            lblAddress.setEnabled(false);
             isWrong = true;
         } else {
             txtAddress.setError(null);
             imgAddress.setEnabled(true);
             lblAddress.setTextColor(getResources().getColor(R.color.colorBlack));
+            lblAddress.setEnabled(true);
             isWrong = false;
         }
         return isWrong;
@@ -239,11 +247,13 @@ public class MainActivity extends AppCompatActivity {
             txtWeb.setError((getString(R.string.main_invalid_data)));
             imgWeb.setEnabled(false);
             lblWeb.setTextColor(getResources().getColor(R.color.colorError));
+            lblWeb.setEnabled(false);
             isWrong = true;
         } else {
             txtWeb.setError(null);
             imgWeb.setEnabled(true);
             lblWeb.setTextColor(getResources().getColor(R.color.colorBlack));
+            lblWeb.setEnabled(true);
             isWrong = false;
         }
         return isWrong;
