@@ -52,9 +52,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initViews() {
+        // UN ARRAY DE UN ÚNICO ELEMENTO? PARA QÚE UN ARRAY?
         final Avatar[] avatar = new Avatar[1];
         avatar[0] = database.getDefaultAvatar();
         imgAvatar = ActivityCompat.requireViewById(this, R.id.imgAvatar);
+        // ESTAS DOS LÍNEAS SE REPITE MÁS ABAJO. CREA UN MÉTODO showAvatar(avatar)
         imgAvatar.setImageResource(database.getDefaultAvatar().getImageResId());
         imgAvatar.setTag(database.getDefaultAvatar().getImageResId());
         imgAvatar.setOnClickListener(v -> {
@@ -68,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
         lblAvatar = ActivityCompat.requireViewById(this, R.id.lblAvatar);
         lblAvatar.setText(database.getDefaultAvatar().getName());
         lblAvatar.setOnClickListener(v -> {
+            // ESTAS LÍNEAS SON IGUAL QUE LAS DEL CLICK LISTENER ANTERIOR. HAZ UN MÉTODO
+            // changeAvatar()
             avatar[0] = database.getRandomAvatar();
             imgAvatar.setImageResource(avatar[0].getImageResId());
             lblAvatar.setText(avatar[0].getName());
@@ -111,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
         imgWeb = ActivityCompat.requireViewById(this, R.id.imgWeb);
     }
 
+    // ESTE MÉTODO ME HA GUSTADO
     private void txtSwapBold(TextView txt) {
         if (txt.getTypeface().isBold()) {
             txt.setTypeface(Typeface.defaultFromStyle(Typeface.NORMAL));
@@ -171,10 +176,14 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    // TODOS ESTOS MÉTODOS isWrong... HACEN PRÁCTICAMENTE LO MISMO. PODRÍAS CREAR
+    // UN MÉTODO QUE RECIBIERA ENTRE OTRAS COSAS UN BOOLEANO INDICATIVO DE SI
+    // EL CAMPO ES VÁLIDO O NO Y REALIZARA LOS CAMBIOS VISUALES CORRESPONDIENTES.
     private boolean isWrongName() {
         boolean isWrong;
         if (txtName.getText().toString().length() <= 0) {
             txtName.setError((getString(R.string.main_invalid_data)));
+            // SE TE PROPORCIONA color_state_selector PARA QUE NO TENGAS QUE HACER ESTO.
             lblName.setTextColor(getResources().getColor(R.color.colorError));
             lblName.setEnabled(false);
             isWrong = true;
@@ -263,6 +272,7 @@ public class MainActivity extends AppCompatActivity {
         boolean flag = true;
         KeyboardUtils.hideSoftKeyboard(this);
 
+        // HAZ MEJOR UN MÉTODO isFormValid()
         if (isWrongName()) {
             flag = false;
         }
